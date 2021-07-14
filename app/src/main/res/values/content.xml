@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="waterEco">Вода "Эко"</string>
+    <string name="fiveHindredMl">500 мл</string>
+    <string name="buttonTextPrice">9999 T</string>
+    <string name="productDescription">Описание товара</string>
+
+</resources>

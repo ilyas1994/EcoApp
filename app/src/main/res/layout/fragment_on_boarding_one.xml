@@ -1,0 +1,65 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="View.FragmentOnBoardingOne">
+
+
+
+    <Button
+        android:id="@+id/button_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_skip"
+        android:textSize="@dimen/fourteen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/layout_marginTop_50dp"
+        android:layout_marginLeft="@dimen/layout_marginLeft_235dp"
+        android:layout_marginRight="@dimen/layout_marginRight_16"
+        />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height_359dp"
+        android:background="@color/onBoardingColor"
+        app:layout_constraintTop_toTopOf="@id/button_skip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0.20"
+        />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/get_bonuses"
+        android:textSize="@dimen/thirty_four_34"
+        android:textStyle="normal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
+        android:layout_marginTop="@dimen/layout_marginTop_16dp"
+        android:layout_marginLeft="@dimen/layout_marginLeft_16"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/textViewSubTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textViewTitle"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginBottom="@dimen/layout_marginBottom_85dp"
+        android:layout_marginRight="@dimen/layout_marginRight_26dp"
+        android:text="@string/textViewSubTitle"
+        android:layout_marginLeft="@dimen/layout_marginLeft_16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
