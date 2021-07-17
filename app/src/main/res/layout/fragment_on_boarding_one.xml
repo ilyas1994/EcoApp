@@ -16,7 +16,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="@dimen/layout_marginTop_50dp"
+        android:layout_marginTop="50dp"
         android:layout_marginLeft="@dimen/layout_marginLeft_235dp"
         android:layout_marginRight="@dimen/layout_marginRight_16"
         />

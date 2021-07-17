@@ -40,7 +40,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/layout_marginLeft_16"
             android:layout_marginTop="@dimen/layout_marginTop_9"
-            android:text="@string/waterEco"
+            android:text="Вода эко"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@id/imageviewWater" />
 
@@ -48,7 +48,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/layout_marginLeft_16"
-            android:text="@string/fiveHindredMl"
+            android:text="500 мл"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@id/textViewNameWater" />
 
@@ -59,7 +59,7 @@
             android:layout_marginTop="@dimen/layout_marginTop_16"
             android:layout_marginRight="@dimen/layout_marginRight_16"
             android:background="@drawable/buttonprice"
-            android:text="@string/buttonTextPrice"
+            android:text="9999 Т"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/imageviewWater" />
 
@@ -69,7 +69,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/layout_marginLeft_16"
             android:layout_marginTop="@dimen/layout_marginTop_43"
-            android:text="@string/productDescription"
+            android:text="Описание товара"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@id/textViewNameWater" />
 
@@ -79,7 +79,7 @@
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            android:layout_marginTop="@dimen/layout_marginTop_348"
+            android:layout_marginTop="348.59dp"
             android:layout_marginRight="@dimen/layout_marginRight_20dp"
             android:src="@drawable/buttonshowfulldescription"
             />
@@ -92,7 +92,7 @@
             android:layout_marginTop="@dimen/layout_marginTop_410dp"
             android:layout_marginLeft="@dimen/layout_marginLeft_19dp"
             android:textSize="@dimen/sixteen"
-            android:text="@string/fragmentaboutaproduct"
+            android:text="Может еще что нибудь"
             />
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -114,7 +114,7 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 android:layout_marginTop="@dimen/layout_marginTop_8dp"
-                android:text="@string/in_basket_670tg"
+                android:text="В корзине 670 тг"
                 android:textColor="@color/white"
                 />
 

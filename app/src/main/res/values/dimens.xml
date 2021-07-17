@@ -19,29 +19,18 @@
     <dimen name="layout_height_96dp">96dp</dimen>
     <dimen name="layout_marginTop_570dp">570dp</dimen>
     <dimen name="layout_marginTop_8dp">8dp</dimen>
-    <dimen name="layout_marginTop_50dp">50dp</dimen>
-    <dimen name="layout_marginLeft_235dp">235dp</dimen>
-    <dimen name="layout_height_359dp">359dp</dimen>
     <dimen name="thirty_four_34">34sp</dimen>
     <dimen name="layout_marginTop_16dp">16dp</dimen>
     <dimen name="layout_marginBottom_85dp">85dp</dimen>
-    <dimen name="layout_marginRight_26dp">26dp</dimen>
     <dimen name="layout_marginTop_50dp">50dp</dimen>
     <dimen name="layout_marginLeft_235dp">235dp</dimen>
     <dimen name="layout_height_359dp">359dp</dimen>
     <dimen name="eighty_five_85">85dp</dimen>
     <dimen name="twenty_six_26">26dp</dimen>
-    <dimen name="layout_marginLeft_235dp">235dp</dimen>
-    <dimen name="layout_height_359dp">359dp</dimen>
     <dimen name="textSize_34sp">34sp</dimen>
-    <dimen name="layout_marginBottom_85dp">85dp</dimen>
     <dimen name="layout_marginRight_26dp">26dp</dimen>
-    <dimen name="layout_height_264dp">264dp</dimen>
     <dimen name="layout_marginTop_9dp">9dp</dimen>
-    <dimen name="layout_width_32dp">32dp</dimen>
-    <dimen name="layout_height_32dp">32dp</dimen>
     <dimen name="layout_marginRight_97dp">97dp</dimen>
-    <dimen name="layout_marginTop_24dp">24dp</dimen>
     <dimen name="layout_width_32dp">32dp</dimen>
     <dimen name="layout_height_32dp">32dp</dimen>
     <dimen name="layout_marginTop_24dp">24dp</dimen>
@@ -49,7 +38,6 @@
     <dimen name="layout_marginTop_12dp">12dp</dimen>
     <dimen name="layout_marginTop_26dp">26dp</dimen>
     <dimen name="layout_marginTop_14dp">14dp</dimen>
-    <dimen name="layout_marginTop_40dp">40dp</dimen>
     <dimen name="layout_marginRight_320dp">320dp</dimen>
     <dimen name="layout_marginTop_36dp">36dp</dimen>
     <dimen name="layout_marginLeft_133dp">133dp</dimen>
@@ -59,7 +47,6 @@
     <dimen name="layout_width_150dp">150dp</dimen>
     <dimen name="layout_height_20dp">20dp</dimen>
     <dimen name="layout_marginTop_6dp">6dp</dimen>
-    <dimen name="layout_width_328dp">328dp</dimen>
     <dimen name="layout_height_36dp">36dp</dimen>
     <dimen name="layout_marginTop_100dp">100dp</dimen>
     <dimen name="layout_marginTop_170dp">170dp</dimen>
@@ -75,7 +62,6 @@
     <dimen name="layout_marginLeft_20dp">20dp</dimen>
     <dimen name="layout_marginLeft_36dp">36dp</dimen>
     <dimen name="layout_width_328dp">328dp</dimen>
-    <dimen name="layout_height_36dp">36dp</dimen>
     <dimen name="layout_marginTop_166dp">166dp</dimen>
     <dimen name="layout_width_168dp">168dp</dimen>
     <dimen name="layout_height_268dp">268dp</dimen>
@@ -87,5 +73,5 @@
     <dimen name="layout_marginRight_8dp">8dp</dimen>
 
 
-    <item name="layout_marginTop_348" type="dimen" format="float">348.59dp</item>
+<!--    <item name="layout_marginTop_348" type="dimen" format="float">348.59dp</item>-->
 </resources>
