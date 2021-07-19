@@ -6,26 +6,23 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <com.google.android.material.tabs.TabLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/tabs"
-        app:tabMode="fixed"
-         />
 
-    <androidx.viewpager.widget.ViewPager
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/viewPager"
-        app:layout_constraintTop_toBottomOf="@id/tabs"
-        />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constrainLayoutOnBoarding"
+        android:id="@+id/emptyFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <fragment
+        android:id="@+id/fragment2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.example.ecoappp.EmptyFragment"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

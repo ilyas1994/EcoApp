@@ -4,26 +4,19 @@ import PresenterContent_ver1.ContractContentVer1
 import PresenterContent_ver1.PresenterContentVer1
 import ViewcontentVer1Category.ViewFragmentContentver1Category
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageButton
 import android.widget.ImageView
-import android.widget.Toast
-import com.example.ecoappp.MainActivity
+import androidx.fragment.app.Fragment
 import com.example.ecoappp.R
 
 
 class ViewFragmentContent_v1 : Fragment(), ContractContentVer1.View {
 
-    lateinit var imageview6: ImageView
-    lateinit var myPres: ContractContentVer1.Presenter
-    private lateinit var mainActivity: MainActivity
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+    private lateinit var imageview6: ImageView
+    private lateinit var myPres: ContractContentVer1.Presenter
 
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -37,17 +30,20 @@ class ViewFragmentContent_v1 : Fragment(), ContractContentVer1.View {
         super.onViewCreated(view, savedInstanceState)
         myPres = PresenterContentVer1()
         myPres.Attach(this)
-        mainActivity = (activity as MainActivity)
         imageview6 = view.findViewById(R.id.imageview6)
 
         imageview6.setOnClickListener {
-        myPres.onClickProduct()
+
+            myPres.onClickProduct()
         }
 
     }
 
     override fun showCategory() {
-        mainActivity.switchFragment(ViewFragmentContentver1Category())
+        parentFragmentManager.beginTransaction().apply {
+            replace(R.id.emptyFragment, ViewFragmentContentver1Category())
+            commit()
+        }
     }
 
     override fun onDestroy() {

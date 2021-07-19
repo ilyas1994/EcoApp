@@ -1,30 +1,20 @@
 package ViewcontentVer1Category
 
-import PresenterFragmentConverter1Category.ContractFragmentConverter1Category
-import PresenterFragmentConverter1Category.PresenterFragmentConverter1Category
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.*
-import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.core.view.isVisible
-import com.example.ecoappp.MainActivity
+import androidx.fragment.app.Fragment
 import com.example.ecoappp.R
-import com.google.android.material.bottomsheet.BottomSheetBehavior
 
 
-class FragmentMoreAboutAProduct : Fragment(){
+class FragmentMoreAboutAProduct : Fragment() {
 
 //    lateinit var myPres: ContractFragmentConverter1Category.Presenter
 //    lateinit var constraintShowFullDescription: ConstraintLayout
 //    lateinit var sheet: ConstraintLayout
 //    lateinit var constraintMyBasket: ConstraintLayout
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
 
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

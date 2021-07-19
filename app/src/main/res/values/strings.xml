@@ -7,7 +7,6 @@
     <string name="textViewSubTitle">Выбирайте любимую категорию товаров и получайте кэшбек до 35 за каждую</string>
     <string name="textViewTitle3">Получайте бонусы за покупки</string>
     <string name="n99">99</string>
-<!--    <string name="productDescription">Описание товара</string>-->
     <string name="textViewLitres1_5">15</string>
     <string name="typeLitresL">Л</string>
     <string name="shelfLife">Срок годности</string>
@@ -32,6 +31,12 @@
     <string name="ten">10</string>
     <string name="In_the_cart_550_tg">В корзине 550 тг</string>
     <string name="in_basket_670tg">В корзине 670 тг</string>
+    <string name="waterEco">Вода Эко</string>
+    <string name="_500ml">500 мл</string>
+    <string name="_9999">9999 Т</string>
+    <string name="_productDescription">Описание товара</string>
+    <string name="_1_5">1.5</string>
+    <string name="letter_L">Л</string>
 
 
 </resources>

@@ -14,7 +14,7 @@
         android:layout_height="@dimen/layout_height_560"
         android:background="@drawable/customshapefragment"
         app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
-        android:visibility="visible"
+
         >
 
         <ImageView
@@ -38,17 +38,17 @@
             android:id="@+id/textViewNameWater"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/layout_marginLeft_16"
+            android:layout_marginStart="@dimen/layout_marginLeft_16"
             android:layout_marginTop="@dimen/layout_marginTop_9"
-            android:text="Вода эко"
+            android:text="@string/waterEco"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@id/imageviewWater" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/layout_marginLeft_16"
-            android:text="500 мл"
+            android:layout_marginStart="@dimen/layout_marginLeft_16"
+            android:text="@string/_500ml"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@id/textViewNameWater" />
 
@@ -57,9 +57,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/layout_marginTop_16"
-            android:layout_marginRight="@dimen/layout_marginRight_16"
+            android:layout_marginEnd="@dimen/layout_marginRight_16"
             android:background="@drawable/buttonprice"
-            android:text="9999 Т"
+            android:text="@string/_9999"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/imageviewWater" />
 
@@ -67,9 +67,9 @@
             android:id="@+id/textViewDesctiption"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/layout_marginLeft_16"
+            android:layout_marginStart="@dimen/layout_marginLeft_16"
             android:layout_marginTop="@dimen/layout_marginTop_43"
-            android:text="Описание товара"
+            android:text="@string/_productDescription"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@id/textViewNameWater" />
 
@@ -80,7 +80,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             android:layout_marginTop="348.59dp"
-            android:layout_marginRight="@dimen/layout_marginRight_20dp"
+            android:layout_marginEnd="@dimen/layout_marginRight_20dp"
             android:src="@drawable/buttonshowfulldescription"
             />
 
@@ -90,9 +90,9 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="@dimen/layout_marginTop_410dp"
-            android:layout_marginLeft="@dimen/layout_marginLeft_19dp"
+            android:layout_marginStart="@dimen/layout_marginLeft_19dp"
             android:textSize="@dimen/sixteen"
-            android:text="Может еще что нибудь"
+            android:text="@string/fragmentaboutaproduct"
             />
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -114,7 +114,7 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 android:layout_marginTop="@dimen/layout_marginTop_8dp"
-                android:text="В корзине 670 тг"
+                android:text="@string/in_basket_670tg"
                 android:textColor="@color/white"
                 />
 

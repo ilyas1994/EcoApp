@@ -4,22 +4,17 @@ import PresenterOnBoarding.ContractOnBoarding
 import PresenterOnBoarding.PresenterOnBoarding
 import View.ViewContent.ViewFragmentContent_v1
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import com.example.ecoappp.MainActivity
+import androidx.fragment.app.Fragment
 import com.example.ecoappp.R
 
 
 class FragmentOnBoardingThree : Fragment(), ContractOnBoarding.View {
-    lateinit var myPresenter: ContractOnBoarding.Presenter
-    lateinit var mainActivity: MainActivity
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
 
-    }
+    private lateinit var myPresenter: ContractOnBoarding.Presenter
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -34,7 +29,6 @@ class FragmentOnBoardingThree : Fragment(), ContractOnBoarding.View {
         var buttonSkip: Button = view.findViewById(R.id.button_skip3)
         myPresenter = PresenterOnBoarding()
         myPresenter.onAttach(this)
-        mainActivity = (activity as MainActivity)
 
         buttonSkip.setOnClickListener {
             myPresenter.onButtonClick()
@@ -42,8 +36,10 @@ class FragmentOnBoardingThree : Fragment(), ContractOnBoarding.View {
     }
 
     override fun nextFragment() {
-        mainActivity.switchFragment(ViewFragmentContent_v1())
-        mainActivity.switchStatusTablayout(false)
+        parentFragmentManager.beginTransaction().apply {
+            replace(R.id.emptyFragment, ViewFragmentContent_v1())
+            commit()
+        }
     }
 
     override fun onDestroy() {

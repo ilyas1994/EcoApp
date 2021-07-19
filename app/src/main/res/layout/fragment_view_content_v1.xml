@@ -14,8 +14,8 @@
         android:src="@drawable/rectangle"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginRight="@dimen/layout_marginRight_320dp"
-        android:layout_marginLeft="@dimen/layout_marginLeft_16"
+        android:layout_marginEnd="@dimen/layout_marginRight_320dp"
+        android:layout_marginStart="@dimen/layout_marginLeft_16"
         />
 
     <ImageView
@@ -37,7 +37,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="@dimen/layout_marginTop_36dp"
-        android:layout_marginLeft="@dimen/layout_marginLeft_133dp"
+        android:layout_marginStart="@dimen/layout_marginLeft_133dp"
         />
 
     <ImageButton
@@ -54,12 +54,12 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Эко"
+            android:text="@string/Eco"
             app:layout_constraintStart_toEndOf="@+id/rectangle"
             app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="@dimen/layout_marginTop_40dp"
             app:layout_constraintRight_toRightOf="parent"
-            android:layout_marginLeft="@dimen/layout_marginLeft_2dp"
+            android:layout_marginStart="@dimen/layout_marginLeft_2dp"
             android:textSize="@dimen/sixteen"
             />
 
@@ -67,7 +67,7 @@
         android:layout_width="@dimen/layout_width_150dp"
         android:layout_height="@dimen/layout_height_20dp"
         android:layout_marginTop="@dimen/layout_marginTop_6dp"
-        android:text="Тимирязева 55/22 ст2"
+        android:text="@string/TimiryazevaStreet"
         android:textColor="#FFFFFF"
         android:textSize="@dimen/fourteen"
         app:layout_constraintLeft_toLeftOf="@+id/states"
@@ -95,11 +95,11 @@
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Булочная"
+        android:text="@string/bakery"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginTop="@dimen/layout_marginTop_170dp"
-        android:layout_marginLeft="@dimen/layout_marginLeft_16"
+        android:layout_marginStart="@dimen/layout_marginLeft_16"
         android:textSize="@dimen/sixteen"
         />
 
@@ -117,13 +117,13 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Таких больше нет"
+            android:text="@string/there_are_no_more_like_that"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginBottom="158dp"
-            android:layout_marginRight="174dp"
+            android:layout_marginEnd="174dp"
             android:layout_marginTop="@dimen/layout_marginTop_12dp"
             android:textSize="@dimen/fourteen"
             />
@@ -136,8 +136,8 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/rectangle_1"
         android:layout_marginTop="@dimen/layout_marginTop_34dp"
-        android:layout_marginLeft="@dimen/layout_marginLeft_16"
-        android:text="Молочный прилавок"
+        android:layout_marginStart="@dimen/layout_marginLeft_16"
+        android:text="@string/milk_counter"
         android:textSize="@dimen/sixteen"
         />
 
@@ -149,7 +149,7 @@
         app:layout_constraintTop_toBottomOf="@id/textviewSubtitle4"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginTop="@dimen/layout_marginTop_26dp"
-        android:layout_marginLeft="@dimen/layout_marginLeft_16"
+        android:layout_marginStart="@dimen/layout_marginLeft_16"
         />
 
       <TextView
@@ -158,9 +158,9 @@
           app:layout_constraintTop_toTopOf="@id/imageview3"
           app:layout_constraintBottom_toBottomOf="@id/imageview3"
           app:layout_constraintLeft_toLeftOf="@id/imageview3"
-          android:layout_marginLeft="@dimen/layout_marginLeft_12dp"
+          android:layout_marginStart="@dimen/layout_marginLeft_12dp"
           android:layout_marginBottom="73.33dp"
-          android:text="Выгодно"
+          android:text="@string/profitable"
           android:textSize="@dimen/fourteen"
           />
     <ImageView
@@ -171,7 +171,7 @@
         app:layout_constraintTop_toBottomOf="@id/textviewSubtitle4"
         app:layout_constraintLeft_toRightOf="@id/imageview3"
         android:layout_marginTop="@dimen/layout_marginTop_26dp"
-        android:layout_marginLeft="@dimen/layout_marginLeft_16"
+        android:layout_marginStart="@dimen/layout_marginLeft_16"
         />
 
       <TextView
@@ -180,7 +180,7 @@
           app:layout_constraintTop_toTopOf="@id/imageview5"
           app:layout_constraintBottom_toBottomOf="@id/imageview5"
           app:layout_constraintLeft_toLeftOf="@id/imageview5"
-          android:layout_marginLeft="@dimen/layout_marginLeft_12dp"
+          android:layout_marginStart="@dimen/layout_marginLeft_12dp"
           android:layout_marginBottom="73.33dp"
           android:text="Китайский  \n новый год"
           android:textSize="14sp"
@@ -195,7 +195,7 @@
         app:layout_constraintTop_toBottomOf="@id/textviewSubtitle4"
         app:layout_constraintLeft_toRightOf="@id/imageview5"
         android:layout_marginTop="@dimen/layout_marginTop_26dp"
-        android:layout_marginLeft="@dimen/layout_marginLeft_16"
+        android:layout_marginStart="@dimen/layout_marginLeft_16"
         />
 
       <TextView
@@ -204,9 +204,9 @@
           app:layout_constraintTop_toTopOf="@id/imageview6"
           app:layout_constraintBottom_toBottomOf="@id/imageview6"
           app:layout_constraintLeft_toLeftOf="@id/imageview6"
-          android:layout_marginLeft="@dimen/layout_marginLeft_12dp"
+          android:layout_marginStart="@dimen/layout_marginLeft_12dp"
           android:layout_marginBottom="73.33dp"
-          android:text="Буше"
+          android:text="@string/bushe"
           android:textSize="@dimen/fourteen"
           android:layout_marginTop="@dimen/layout_marginTop_12dp"
           />
@@ -225,7 +225,7 @@
             android:id="@+id/textViewMinimalCost"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Минимальная корзина 500т 25 35 мин"
+            android:text="@string/textViewMinimalCost"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -238,7 +238,7 @@
             android:src="@drawable/vectorminimalcost"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintRight_toLeftOf="@id/textViewMinimalCost"
-            android:layout_marginRight="@dimen/layout_marginRight_12dp"
+            android:layout_marginEnd="@dimen/layout_marginRight_12dp"
             android:layout_marginTop="16.5dp"
             />
         <ImageView
@@ -248,7 +248,7 @@
             app:layout_constraintLeft_toRightOf="@id/textViewMinimalCost"
             app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="@dimen/layout_marginRight_17dp"
-            android:layout_marginLeft="@dimen/layout_marginLeft_8dp"
+            android:layout_marginStart="@dimen/layout_marginLeft_8dp"
             />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
