@@ -16,11 +16,11 @@ import com.google.android.material.bottomsheet.BottomSheetBehavior
 
 class ViewFragmentContentver1Category : Fragment(), ContractFragmentConverter1Category.View {
 
-    lateinit var imageViewProduct2: ImageView
-    lateinit var myPres: ContractFragmentConverter1Category.Presenter
-    lateinit var sheet: ConstraintLayout
-    lateinit var constraintLayoutMyBasket: ConstraintLayout
-    lateinit var buttonprice: Button
+    private lateinit var imageViewProduct2: ImageView
+    private lateinit var myPres: ContractFragmentConverter1Category.Presenter
+    private lateinit var sheet: ConstraintLayout
+    private lateinit var constraintLayoutMyBasket: ConstraintLayout
+    private lateinit var buttonprice: Button
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -35,22 +35,16 @@ class ViewFragmentContentver1Category : Fragment(), ContractFragmentConverter1Ca
         sheet = view.findViewById(R.id.sheet)
         constraintLayoutMyBasket = view.findViewById(R.id.constraintLayoutMyBasket)
 
-        //
         buttonprice = view.findViewById(R.id.buttonprice)
-//        constraintShowFullDescription = view.findViewById(R.id.constraintShowFullDescription)
 
         myPres = PresenterFragmentConverter1Category()
         myPres.onAttach(this)
         imageViewProduct2 = view.findViewById(R.id.imageViewProduct2)
 
-
         BottomSheetBehavior.from(sheet).apply {
             peekHeight = 0
             this.state = BottomSheetBehavior.STATE_HIDDEN
         }
-
-
-
 
         imageViewProduct2.setOnClickListener {
             myPres.onClickProduct()
@@ -78,5 +72,4 @@ class ViewFragmentContentver1Category : Fragment(), ContractFragmentConverter1Ca
         super.onDestroy()
         myPres.onDetach()
     }
-
 }

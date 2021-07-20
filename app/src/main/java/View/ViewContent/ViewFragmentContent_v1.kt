@@ -9,14 +9,15 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.fragment.app.Fragment
+import com.example.ecoappp.EmptyFragment
 import com.example.ecoappp.R
+import com.example.ecoappp.Router
 
 
 class ViewFragmentContent_v1 : Fragment(), ContractContentVer1.View {
 
     private lateinit var imageview6: ImageView
     private lateinit var myPres: ContractContentVer1.Presenter
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -40,8 +41,9 @@ class ViewFragmentContent_v1 : Fragment(), ContractContentVer1.View {
     }
 
     override fun showCategory() {
-        parentFragmentManager.beginTransaction().apply {
-            replace(R.id.emptyFragment, ViewFragmentContentver1Category())
+        val nextFragment = Router().createFragment(ViewFragmentContentver1Category())
+        requireActivity().supportFragmentManager.beginTransaction().apply {
+            replace(R.id.emptyFragment, nextFragment, null)
             commit()
         }
     }

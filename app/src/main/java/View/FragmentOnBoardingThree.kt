@@ -9,7 +9,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
+import com.example.ecoappp.EmptyFragment
 import com.example.ecoappp.R
+import com.example.ecoappp.Router
 
 
 class FragmentOnBoardingThree : Fragment(), ContractOnBoarding.View {
@@ -36,8 +38,9 @@ class FragmentOnBoardingThree : Fragment(), ContractOnBoarding.View {
     }
 
     override fun nextFragment() {
-        parentFragmentManager.beginTransaction().apply {
-            replace(R.id.emptyFragment, ViewFragmentContent_v1())
+        val nextFragment = Router().createFragment(ViewFragmentContent_v1())
+        requireActivity().supportFragmentManager.beginTransaction().apply {
+            replace(R.id.emptyFragment, nextFragment, null)
             commit()
         }
     }

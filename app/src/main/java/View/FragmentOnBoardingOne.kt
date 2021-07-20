@@ -9,7 +9,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
+import com.example.ecoappp.EmptyFragment
 import com.example.ecoappp.R
+import com.example.ecoappp.Router
 
 
 class FragmentOnBoardingOne : Fragment(), ContractOnBoarding.View {
@@ -23,11 +25,11 @@ class FragmentOnBoardingOne : Fragment(), ContractOnBoarding.View {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_on_boarding_one, container, false)
+
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
 
         button_skip = view.findViewById(R.id.button_skip)
         myPresenter = PresenterOnBoarding()
@@ -36,19 +38,19 @@ class FragmentOnBoardingOne : Fragment(), ContractOnBoarding.View {
         button_skip.setOnClickListener {
             myPresenter.onButtonClick()
         }
-
     }
 
     override fun nextFragment() {
-        parentFragmentManager.beginTransaction().apply {
-            replace(R.id.emptyFragment, ViewFragmentContent_v1())
+        val nextFragment = Router().createFragment(ViewFragmentContent_v1())
+        requireActivity().supportFragmentManager.beginTransaction().apply {
+            replace(R.id.emptyFragment, nextFragment, null)
             commit()
         }
+
     }
 
     override fun onDestroy() {
         super.onDestroy()
         myPresenter.onDetach()
     }
-
 }

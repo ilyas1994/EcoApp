@@ -9,11 +9,6 @@ import android.view.ViewGroup
 
 class EmptyFragment : Fragment() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -22,5 +17,15 @@ class EmptyFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_empty, container, false)
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        routerNextFragment(Fragment())
+        }
+    fun routerNextFragment(fragment: Fragment){
+        parentFragmentManager.beginTransaction().apply {
+            replace(R.id.emptyFragment, fragment)
+            commit()
+        }
+    }
+    }
 
-}

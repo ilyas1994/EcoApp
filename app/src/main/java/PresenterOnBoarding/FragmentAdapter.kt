@@ -34,5 +34,4 @@ class FragmentAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm){
             else -> return "Third Boarding"
         }
     }
-
 }
