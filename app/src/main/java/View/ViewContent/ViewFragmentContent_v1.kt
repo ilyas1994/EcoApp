@@ -12,12 +12,13 @@ import androidx.fragment.app.Fragment
 import com.example.ecoappp.EmptyFragment
 import com.example.ecoappp.R
 import com.example.ecoappp.Router
+import org.koin.android.ext.android.inject
 
 
 class ViewFragmentContent_v1 : Fragment(), ContractContentVer1.View {
 
     private lateinit var imageview6: ImageView
-    private lateinit var myPres: ContractContentVer1.Presenter
+    private val myKoinContent_v1 by inject<PresenterContentVer1>()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -29,15 +30,12 @@ class ViewFragmentContent_v1 : Fragment(), ContractContentVer1.View {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        myPres = PresenterContentVer1()
-        myPres.Attach(this)
+        myKoinContent_v1.setView(this)
         imageview6 = view.findViewById(R.id.imageview6)
 
         imageview6.setOnClickListener {
-
-            myPres.onClickProduct()
+            myKoinContent_v1.onClickProduct()
         }
-
     }
 
     override fun showCategory() {
@@ -48,8 +46,5 @@ class ViewFragmentContent_v1 : Fragment(), ContractContentVer1.View {
         }
     }
 
-    override fun onDestroy() {
-        super.onDestroy()
-        myPres.onDetach()
-    }
+
 }

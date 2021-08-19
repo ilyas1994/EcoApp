@@ -2,23 +2,22 @@ package PresenterFragmentConverter1Category
 
 class PresenterFragmentConverter1Category: ContractFragmentConverter1Category.Presenter {
 
-    lateinit var view: ContractFragmentConverter1Category.View
 
-    override fun onAttach(view: ContractFragmentConverter1Category.View) {
-        this.view = view
+   private var koinConverter1Category: ContractFragmentConverter1Category.View? = null
+    fun setView(view: ContractFragmentConverter1Category.View){
+        koinConverter1Category = view
     }
 
+
     override fun onClickProduct() {
-        view.viewButtonSheet()
+        koinConverter1Category?.viewButtonSheet()
     }
 
     override fun onClickFullDescription() {
-        view.viewFullDescription()
+        koinConverter1Category?.viewFullDescription()
     }
 
-    override fun onDetach() {
-        this.view = ConverterCategoryEmptyView
-    }
+
 
 
 }

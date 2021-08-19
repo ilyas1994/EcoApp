@@ -29,7 +29,7 @@ class ViewFragmentPager : Fragment() {
         tabLayout = view.findViewById(R.id.tabs)
         viewPager = view.findViewById(R.id.viewPager2)
 
-        var fragmentAdapter = FragmentAdapter(parentFragmentManager)
+        val fragmentAdapter = FragmentAdapter(parentFragmentManager)
         viewPager.adapter = fragmentAdapter
     }
 }

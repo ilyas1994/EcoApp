@@ -12,15 +12,16 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.Fragment
 import com.example.ecoappp.R
 import com.google.android.material.bottomsheet.BottomSheetBehavior
+import org.koin.android.ext.android.inject
 
 
 class ViewFragmentContentver1Category : Fragment(), ContractFragmentConverter1Category.View {
 
     private lateinit var imageViewProduct2: ImageView
-    private lateinit var myPres: ContractFragmentConverter1Category.Presenter
     private lateinit var sheet: ConstraintLayout
     private lateinit var constraintLayoutMyBasket: ConstraintLayout
     private lateinit var buttonprice: Button
+    private val koin by inject<PresenterFragmentConverter1Category>()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -32,32 +33,25 @@ class ViewFragmentContentver1Category : Fragment(), ContractFragmentConverter1Ca
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        sheet = view.findViewById(R.id.sheet)
-        constraintLayoutMyBasket = view.findViewById(R.id.constraintLayoutMyBasket)
+        init()
 
-        buttonprice = view.findViewById(R.id.buttonprice)
-
-        myPres = PresenterFragmentConverter1Category()
-        myPres.onAttach(this)
-        imageViewProduct2 = view.findViewById(R.id.imageViewProduct2)
-
+        koin.setView(this)
         BottomSheetBehavior.from(sheet).apply {
             peekHeight = 0
             this.state = BottomSheetBehavior.STATE_HIDDEN
         }
 
         imageViewProduct2.setOnClickListener {
-            myPres.onClickProduct()
+            koin.onClickProduct()
         }
 
         buttonprice.setOnClickListener {
-            myPres.onClickFullDescription()
+            koin.onClickFullDescription()
         }
 
     }
 
     override fun viewButtonSheet() {
-
         BottomSheetBehavior.from(sheet).apply {
             peekHeight = 200
             this.state = BottomSheetBehavior.STATE_EXPANDED
@@ -68,8 +62,10 @@ class ViewFragmentContentver1Category : Fragment(), ContractFragmentConverter1Ca
 
     }
 
-    override fun onDestroy() {
-        super.onDestroy()
-        myPres.onDetach()
+    private fun init(){
+        sheet = view?.findViewById(R.id.sheet)!!
+        constraintLayoutMyBasket = view?.findViewById(R.id.constraintLayoutMyBasket)!!
+        buttonprice = view?.findViewById(R.id.buttonprice)!!
+        imageViewProduct2 = view?.findViewById(R.id.imageViewProduct2)!!
     }
 }

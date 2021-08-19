@@ -2,17 +2,13 @@ package PresenterOnBoarding
 
 class PresenterOnBoarding: ContractOnBoarding.Presenter {
 
-    lateinit var view: ContractOnBoarding.View
-
-    override fun onAttach(view: ContractOnBoarding.View) {
-        this.view = view
+    private var viewOnBoarding: ContractOnBoarding.View? = null
+    fun setView(view: ContractOnBoarding.View){
+        viewOnBoarding = view
     }
 
-    override fun onDetach() {
-        this.view = onBoardingEmptyView
-    }
     override fun onButtonClick() {
-        view.nextFragment()
+        viewOnBoarding?.nextFragment()
     }
 
 

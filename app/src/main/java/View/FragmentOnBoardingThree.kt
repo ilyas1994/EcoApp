@@ -12,12 +12,12 @@ import androidx.fragment.app.Fragment
 import com.example.ecoappp.EmptyFragment
 import com.example.ecoappp.R
 import com.example.ecoappp.Router
+import org.koin.android.ext.android.inject
 
 
 class FragmentOnBoardingThree : Fragment(), ContractOnBoarding.View {
 
-    private lateinit var myPresenter: ContractOnBoarding.Presenter
-
+   private val koin by inject<PresenterOnBoarding>()
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -29,11 +29,10 @@ class FragmentOnBoardingThree : Fragment(), ContractOnBoarding.View {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         var buttonSkip: Button = view.findViewById(R.id.button_skip3)
-        myPresenter = PresenterOnBoarding()
-        myPresenter.onAttach(this)
+        koin.setView(this)
 
         buttonSkip.setOnClickListener {
-            myPresenter.onButtonClick()
+            koin.onButtonClick()
         }
     }
 
@@ -43,10 +42,5 @@ class FragmentOnBoardingThree : Fragment(), ContractOnBoarding.View {
             replace(R.id.emptyFragment, nextFragment, null)
             commit()
         }
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        myPresenter.onDetach()
     }
 }
