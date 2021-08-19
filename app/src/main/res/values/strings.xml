@@ -2,4 +2,41 @@
     <string name="app_name">EcoAppp</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fragmentaboutaproduct">Может еще что нибудь</string>
+    <string name="get_bonuses">Получайте бонусы за покупки</string>
+    <string name="textViewSubTitle">Выбирайте любимую категорию товаров и получайте кэшбек до 35 за каждую</string>
+    <string name="textViewTitle3">Получайте бонусы за покупки</string>
+    <string name="n99">99</string>
+    <string name="textViewLitres1_5">15</string>
+    <string name="typeLitresL">Л</string>
+    <string name="shelfLife">Срок годности</string>
+    <string name="numbersOfDay365">365 дней</string>
+    <string name="textViewDescription">Описание</string>
+    <string name="textViewProductDescription">Длинное описание продукта много строк</string>
+    <string name="textViewStorageCondition">Условия хранения</string>
+    <string name="textViewStorageTemparature">от 0С до 25С</string>
+    <string name="Eco">Эко</string>
+    <string name="TimiryazevaStreet">Тимирязева 52 55 ст2</string>
+    <string name="bakery">Булочная</string>
+    <string name="there_are_no_more_like_that">Таких больше нет</string>
+    <string name="milk_counter">Молочный прилавок</string>
+    <string name="profitable">Выгодно</string>
+    <string name="bushe">Буше</string>
+    <string name="textViewMinimalCost">Минимальная корзина 500т 25 35 мин</string>
+    <string name="category">Категория</string>
+    <string name="discount">Скидка</string>
+    <string name="textViewNumberForLiter">500 мл</string>
+    <string name="five_houndred_fifrt_tg">550 тг</string>
+    <string name="five_houndred_and_five_houndred_fifty">550 тг 500мл</string>
+    <string name="ten">10</string>
+    <string name="In_the_cart_550_tg">В корзине 550 тг</string>
+    <string name="in_basket_670tg">В корзине 670 тг</string>
+    <string name="waterEco">Вода Эко</string>
+    <string name="_500ml">500 мл</string>
+    <string name="_9999">9999 Т</string>
+    <string name="_productDescription">Описание товара</string>
+    <string name="_1_5">1.5</string>
+    <string name="letter_L">Л</string>
+
+
 </resources>

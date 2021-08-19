@@ -1,0 +1,127 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ViewcontentVer1Category.FragmentMoreAboutAProduct"
+    >
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/sheet"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height_560"
+        android:background="@drawable/customshapefragment"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+
+        >
+
+        <ImageView
+            android:layout_width="@dimen/layout_width_70"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_remove"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageviewWater"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/layout_height_264dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/imageviewproduct"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewNameWater"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/layout_marginLeft_16"
+            android:layout_marginTop="@dimen/layout_marginTop_9"
+            android:text="@string/waterEco"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageviewWater" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/layout_marginLeft_16"
+            android:text="@string/_500ml"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewNameWater" />
+
+        <Button
+            android:id="@+id/buttonprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_marginTop_16"
+            android:layout_marginEnd="@dimen/layout_marginRight_16"
+            android:background="@drawable/buttonprice"
+            android:text="@string/_9999"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageviewWater" />
+
+        <TextView
+            android:id="@+id/textViewDesctiption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/layout_marginLeft_16"
+            android:layout_marginTop="@dimen/layout_marginTop_43"
+            android:text="@string/_productDescription"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewNameWater" />
+
+        <ImageView
+            android:id="@+id/ImageViewShowFullDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="348.59dp"
+            android:layout_marginEnd="@dimen/layout_marginRight_20dp"
+            android:src="@drawable/buttonshowfulldescription"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/layout_marginTop_410dp"
+            android:layout_marginStart="@dimen/layout_marginLeft_19dp"
+            android:textSize="@dimen/sixteen"
+            android:text="@string/fragmentaboutaproduct"
+            />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintMyBasket"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height_96dp"
+            android:background="@drawable/constraintinthebusket"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="@dimen/layout_marginTop_570dp"
+            >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttoninthebusket"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="@dimen/layout_marginTop_8dp"
+                android:text="@string/in_basket_670tg"
+                android:textColor="@color/white"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

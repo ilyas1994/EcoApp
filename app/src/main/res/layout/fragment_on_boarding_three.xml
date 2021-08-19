@@ -3,12 +3,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="View.FragmentOnBoardingOne">
-
+    tools:context="View.FragmentOnBoardingThree">
 
 
     <Button
-        android:id="@+id/button_skip"
+        android:id="@+id/button_skip3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/button_skip"
@@ -16,17 +15,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="@dimen/layout_marginTop_50dp"
         android:layout_marginStart="@dimen/layout_marginLeft_235dp"
         android:layout_marginEnd="@dimen/layout_marginRight_16"
         />
 
     <FrameLayout
-        android:id="@+id/frameLayout"
+        android:id="@+id/frameLayout3"
         android:layout_width="match_parent"
         android:layout_height="@dimen/layout_height_359dp"
         android:background="@color/onBoardingColor"
-        app:layout_constraintTop_toTopOf="@id/button_skip"
+        app:layout_constraintTop_toTopOf="@id/button_skip3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -34,29 +33,29 @@
         />
 
     <TextView
-        android:id="@+id/textViewTitle"
+        android:id="@+id/textViewTitle3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/get_bonuses"
+        android:text="@string/textViewTitle3"
         android:textSize="@dimen/thirty_four_34"
         android:textStyle="normal"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
-        android:layout_marginTop="@dimen/layout_marginTop_16dp"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout3"
+        android:layout_marginTop="@dimen/layout_marginTop_16"
         android:layout_marginStart="@dimen/layout_marginLeft_16"
         android:textColor="@color/black"
         />
 
     <TextView
-        android:id="@+id/textViewSubTitle"
+        android:id="@+id/textViewSubTitle3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/textViewTitle"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginBottom="@dimen/layout_marginBottom_85dp"
-        android:layout_marginEnd="@dimen/layout_marginRight_26dp"
+        android:layout_marginBottom="@dimen/eighty_five_85"
+        android:layout_marginEnd="@dimen/twenty_six_26"
         android:text="@string/textViewSubTitle"
         android:layout_marginStart="@dimen/layout_marginLeft_16"
         app:layout_constraintBottom_toBottomOf="parent"

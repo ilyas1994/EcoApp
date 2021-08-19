@@ -7,4 +7,12 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="onBoardingColor">#BAB4B2</color>
+    <color name="serchBar">#0A34C759</color>
+    <color name="borders">#DEE1E8</color>
+    <color name="buttomCategory">#0A000000</color>
+    <color name="buttomPrice">#FFFFFF</color>
+    <color name="customshaprefragment">#FFFFFF</color>
+    <color name="buttonPriceClick">#34C759</color>
+
 </resources>

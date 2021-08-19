@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="button_skip">Пропустить</string>
+    <string name="onBoardingFirst">First</string>
+    <string name="onBoardingSecond">Second</string>
+    <string name="onBoardingThird">Third</string>
+</resources>
